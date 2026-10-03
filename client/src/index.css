@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* 
+  Tailwind v4 Theme Configuration 
+  The @theme block automatically generates utility classes (e.g., bg-brand-espresso, text-brand-clay).
+*/
+@theme {
+  --color-brand-espresso: #2A2420;
+  --color-brand-clay: #896A58;
+  --color-brand-sage: #567257;
+  --color-brand-stone: #ACAB9E;
+  --color-brand-mist: #D9D8D5;
+
+  --color-surface-light: #EAE9E6;
+  --color-surface-dark: #3A322D;
+  --color-state-hover: #9C7A67;
+  --color-state-disabled: #C2C1B7;
+
+  /* Mapped Dynamic Variables for Utility Classes */
+  --color-bg-primary: var(--bg-primary);
+  --color-text-primary: var(--text-primary);
+  --color-bg-surface: var(--bg-surface);
+}
+
+/* Base Light Mode Variables */
+:root {
+  --bg-primary: var(--color-brand-mist);
+  --text-primary: var(--color-brand-espresso);
+  --bg-surface: var(--color-surface-light);
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --bg-primary: var(--color-brand-espresso);
+  --text-primary: var(--color-brand-mist);
+  --bg-surface: var(--color-surface-dark);
+}
+
+/* Global Reset & Transitions */
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 300ms ease, color 300ms ease;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

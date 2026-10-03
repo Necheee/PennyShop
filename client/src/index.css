@@ -22,15 +22,8 @@
   --color-bg-surface: var(--bg-surface);
 }
 
-/* Base Light Mode Variables */
+/* Base Variables (Dark Mode Exclusive) */
 :root {
-  --bg-primary: var(--color-brand-mist);
-  --text-primary: var(--color-brand-espresso);
-  --bg-surface: var(--color-surface-light);
-}
-
-/* Dark Mode Overrides */
-.dark {
   --bg-primary: var(--color-brand-espresso);
   --text-primary: var(--color-brand-mist);
   --bg-surface: var(--color-surface-dark);

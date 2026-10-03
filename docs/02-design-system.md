@@ -22,10 +22,10 @@ These hex values are **locked** and must be defined as CSS variables. Hard-coded
 
 *(Note: Tints for card surfaces, hovers, and disabled states are pending owner approval).*
 
-## 3. Light and Dark Mode
-- Follows the user's system setting by default.
-- Visible toggle in the header (saved to `localStorage`).
-- Both themes get equal design attention. Prevent flashes of the wrong theme on load.
+## 3. Exclusively Dark Mode
+- Per the owner's request during Phase 2, Light Mode has been permanently removed.
+- The application will exclusively run in Dark Mode.
+- No theme toggles or light mode styles are permitted.
 
 ## 4. Typography
 - Use the default typography: the system sans-serif stack provided by Tailwind.

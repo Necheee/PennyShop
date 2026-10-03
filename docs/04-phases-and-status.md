@@ -4,22 +4,23 @@ This document tracks the progress of the front-end build.
 **Rule:** Stop after each phase and report. Do not start the next phase until the owner approves.
 
 ## Phase 1: Foundation
-- [ ] Project setup in `client` folder (and empty `server` folder).
-- [ ] Folder structure scaffolding.
-- [ ] Category and subcategory definitions.
-- [ ] Tailwind config, CSS variables (tokens).
-- [ ] Proposed colour tints and library list approval from owner.
-- [ ] Theme toggle implementation.
-- [ ] Layout shell and routing.
-- [ ] `netlify.toml` setup.
-**Status:** ⏳ Not Started
+- [x] Project setup in `client` folder (and empty `server` folder).
+- [x] Folder structure scaffolding.
+- [x] Category and subcategory definitions.
+- [x] Tailwind config, CSS variables (tokens).
+- [x] Proposed colour tints and library list approval from owner.
+- [x] Theme toggle implementation.
+- [x] Layout shell and routing.
+- [x] `netlify.toml` setup.
+**Status:** ✅ Completed
 
 ## Phase 2: Navigation
-- [ ] Announcement bar.
-- [ ] Header (desktop and mobile).
-- [ ] Mobile menu (sliding).
-- [ ] Footer.
-**Status:** ⏳ Not Started
+- [x] Announcement bar.
+- [x] Header (desktop and mobile).
+- [x] Mobile menu (sliding).
+- [x] Footer.
+- [x] *Removed Light Mode permanently.*
+**Status:** ✅ Completed
 
 ## Phase 3: Catalogue
 - [ ] Data models and types.
